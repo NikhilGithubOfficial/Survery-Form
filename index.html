@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a survery form - freecodecamp</title>
+</head>
+<body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Thank you for taking the time to fill out this form.</p>
+    <div>
+        <form id="survey-form">
+            <label for="name" id="name-label">* Name</label><br>
+            <input id="name" type="text" placeholder="Enter your name" required><br>
+            <label for="email" id="email-label">* Email</label><br>
+            <input id="email" type="email" placeholder="Enter your Email" required><br>
+            <label for="number" id="number-label">Age(optional)</label><br>
+            <input id="number" type="number" placeholder="Enter your age" min=1 max=125><br>
+            <label for="dropdown" id="dropdown-label">Which option best describes you?</label><br>
+            <select id="dropdown" form="survey-form">
+                <option value="" disabled selected>select an option</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full time job</option>
+                <option value="full-time-learner">Full time learner</option>
+                <option value="prefer-not">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <label for="recommendation">* How likely is that you would recommend freeCodeCamp to a friend?</label><br>
+            <fieldset id="recommendation">
+            <label for="r_definitely"><input type="radio" name="recommend" id="r_definitely" value="definitely" required>Definitely</label><br>
+            <label for="r_maybe"><input type="radio" name="recommend" id="r_maybe" value="maybe" required>Maybe</label><br>
+            <label for="r_not_sure"><input type="radio" name="recommend" id="r_not_sure" value="notsure" required>Not sure</label><br>
+            </fieldset>
+            <br>
+            <label for="likethemost">What do you like most in FCC:</label><br>
+            <select id="likethemost">
+            <option value="" disabled selected>select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+            </select>
+            <br>
+            <label for="improvements">Things that should be improved in the future:</label>
+            <fieldset id="improvements">
+            <legend>(<em>Check all that apply</em>)</legend>
+            <label for="c-fep"><input type="checkbox" name="improve-checks" id="c-fep" value="fep">Front-end Projects</label><br>
+            <label for="c-bep"><input type="checkbox" name="improve-checks" id="c-bep" value="bep">Back-end Projects</label><br>
+            <label for="c-datav"><input type="checkbox" name="improve-checks" id="c-datav" value="datav">Data Visualization</label><br>
+            <label for="c-chlgs"><input type="checkbox" name="improve-checks" id="c-chlgs" value="chlgs">Challenges</label><br>
+            <label for="c-osc"><input type="checkbox" name="improve-checks" id="c-osc" value="osc">Open Source Community</label><br>
+            <label for="c-ghr"><input type="checkbox" name="improve-checks" id="c-ghr" value="ghr">Gitter help rooms</label><br>
+            <label for="c-vid"><input type="checkbox" name="improve-checks" id="c-vid" value="vid">Videos</label><br>
+            <label for="c-meet"><input type="checkbox" name="improve-checks" id="c-meet" value="meet">City Meetups</label><br>
+            <label for="c-wiki"><input type="checkbox" name="improve-checks" id="c-wiki" value="wiki">Wiki</label><br>
+            <label for="c-forum"><input type="checkbox" name="improve-checks" id="c-forum" value="forum">
+            <label for="c-wiki"><input type="checkbox" name="improve-checks" id="c-wiki" value="wiki">Wiki</label><br>
+            Forum</label><br>
+            <label for="c-addcours"><input type="checkbox" name="improve-checks" id="c-addcours" value="addcours">Additional Courses</label><br>
+            </fieldset>
+            <br>
+            <label for="comments">Any Comments or Suggestions?</label><br>
+            <textarea style="height:50px;resize:vertical;" id="comments" placeholder="enter a comment"></textarea><br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
